@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Básicos PHP</title>
+</head>
+
+<body>
+    <h1>-------------EXERCÍCIOS PHP-------------</br></h1>
+
+
+    <h2>3 - Qual a sua data de nascimento? </br></h2>
+    <form action="3_data.php" method="POST">
+        <label for="nascimento">Data de Nascimento: </label>
+        <input type="date" id="nascimento" name="nascimento">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+    <h2>---------------------------------------</h2>
+    <h2>4 - Média de notas!</br></h2>
+    <form action="4_aprovado_reprovado.php" method="POST">
+        <label for="nota1">Digite a primeira nota: </label>
+        <input type="number" id="nota1" name="nota1" min="0" max="10" placeholder="1 a 10"></br>
+        <label for="nota2">Digite a segunda nota: </label>
+        <input type="number" id="nota2" name="nota2" min="0" max="10" placeholder="1 a 10"> </br>
+        <button type="submit">Verificar</button>
+    </form>
+
+
+    <h2>---------------------------------------</h2>
+    <h2>5 - Cada dia da semana corresponde a um número!</br></h2>
+    <form action="5_dias_semana.php" method="POST">
+        <label for="diaSemana">Digite um número: </label>
+        <input type="number" id="diaSemana" name="diaSemana">
+        <button type="submit">Ask</button>
+    </form>
+
+    <h2>---------------------------------------</h2>
+    <h2>6 - Telefone com DDD</br></h2>
+
+    <form action="6_ddd_telefone.php" method="POST">
+        <label for="numTel">Digite seu número de telefone com DDD: </label>
+        <input type="text" inputmode="numeric" pattern="[1-9][0-9]*" id="numTel" name="numTel" placeholder="DDD sem zero!">
+        <button type="submit">Validar</button>
+    </form>
+
+    <!--
+    <form action="6_ddd_telefone.php" method="POST">
+        <label for="dddNum">DDD: </label>
+        <input type="number" name="dddNum" id="dddNum" class="ddd" placeholder="DDD" maxlength="2" required
+            pattern="\d{2}">
+
+        <label for="numTel">Número: </label>
+        <input type="number" name="numTel" id="numTel" class="numero" placeholder="Número" maxlength="9" required
+            pattern="\d{8,9}">
+
+        <button type="submit">Validar</button>
+    </form>     -->
+
+
+
+    <h2>---------------------------------------</h2>
+    <h2>7 - Nomes e formatações</br></h2>
+    <form action="7_nomes.php" method="POST">
+        <label for="nome">Digite seu Primeiro nome: </label>
+        <input type="text" id="nome" name="nome"></br>
+
+        <label for="meioNome">Digite seu Segundo nome: </label>
+        <input type="text" id="meioNome" name="meioNome"></br>
+
+        <label for="sobrenome">Digite seu Sobrenome: </label>
+        <input type="text" id="sobrenome" name="sobrenome"> </br>
+
+        <button type="submit">Next</button>
+    </form>
+
+    <h2>---------------------------------------</h2>
+    <h2>8 - Meses do Ano</br></h2>
+    <form action="8_meses_ano.php" method="POST">
+        <label for="numMes">Digite um número de um a doze: </label>
+        <input type="text" inputmode="numeric" pattern="[1-9][0-9]*" placeholder="Números, sem 0 no início!" id="numMes" name="numMes" min="1" max="12">
+        <button type="submit">Perguntar</button>
+    </form>
+
+    <h2>---------------------------------------</h2>
+    <h1>INSERÇÃO DE DADOS NO BANCO</br></h1>
+
+    <form action="10_banco_insert.php" method="POST">
+        <label for="nome">Nome: </label></br>
+        <input type="text" id="nome" name="nome"></br>
+
+        <label for="email">Email: </label></br>
+        <input type="text" id="email" name="email"></br>
+
+        <label for="telefone">Telefone: </label></br>
+        <input type="number" id="telefone" name="telefone"></br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+</body>
+
+</html>

@@ -54,7 +54,7 @@
             default:
                 echo "ERRO!";
         }
-        echo "Você mora na região $r do Brasil! <br/>";
+        echo "Você mora na região " . $r . " do Brasil! <br/>";
 
         if ($e == 'mg') {
             echo "E você mora no Melhor estado do Brasil! <br/>";
